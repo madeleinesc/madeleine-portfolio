@@ -169,6 +169,7 @@ a:hover {
   width: 500px;
   height: 600px;
   margin-bottom: 15px;
+  border-radius: 15px;
 }
 
 /* MEDIA QUERIES FOR ABOUT SECTION (1st for Desktops, 2nd for mobile devices) */
@@ -207,7 +208,7 @@ a:hover {
 /* minor padding for top and bottom of work section */
 /* larger padding for sides */
 .workSection {
-  padding: 20px 60px;
+  padding: 20px 20px;
 }  
 
 /* flex used for container to put image and text in */
@@ -241,14 +242,17 @@ a:hover {
 }
 
 /* image in center of column */
-.workImage {
+.mainworkImage {
   display: flex;
   justify-content: center;
 }
 
-.workImg {
+.mainworkImg {
   margin-bottom: 15px;
+  border-radius: 15px;
 }
+
+
 
 /* MEDIA QUERIES FOR WORK SECTION */
 /* on bigger screens, h3 title and text, will appear side by side with the image */
@@ -276,7 +280,7 @@ a:hover {
     font-size: 10px;
   }
 
-  .workImg {
+  .mainworkImg {
     width: 200px;
     height: 300px;
   }
