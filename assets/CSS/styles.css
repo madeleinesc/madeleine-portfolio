@@ -138,7 +138,7 @@ a:hover {
 .aboutContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 700px;
+  grid-template-rows: 600px;
 }
 
 .aboutText {
@@ -197,8 +197,8 @@ a:hover {
   }
 
   .aboutImg {
-    width: 300px;
-    height: 400px;
+    width: 250px;
+    height: 350px;
   }
 }
 
@@ -208,7 +208,7 @@ a:hover {
 /* minor padding for top and bottom of work section */
 /* larger padding for sides */
 .workSection {
-  padding: 20px 20px;
+  padding: 20px 60px;
 }  
 
 /* flex used for container to put image and text in */
@@ -222,7 +222,7 @@ a:hover {
 .workContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 700px;
+  grid-template-rows: 400px;
 }
 
 .workText {
@@ -239,6 +239,11 @@ a:hover {
 /* space between sentences */
 .workText p {
   line-height: 200%;
+  margin-bottom: 32px;
+}
+
+.workText h4 {
+  text-align: center;
 }
 
 /* image in center of column */
