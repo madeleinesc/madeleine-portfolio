@@ -1,4 +1,6 @@
-/* universal selector */
+/* UNIVERSAL */
+
+/* all font will be same color and font family */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,13 +9,25 @@
   color:black
 }
 
-/* background color of webpage */
+/* background color of entire webpage */
 body {
   background-color: white;
 }
 
+/* All h2 titles will have the same sizing and 15px margin at the bottom */
+h2 {
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* -------------------------------- */
+
 /* HEADER SECTION */
+
 /* color of header is same as background with very minor padding */
+/* header will be fixed so user can click on links at any part of the webpage */
 header {
   background-color: white;
   width: 100%;
@@ -22,7 +36,7 @@ header {
   top: 0;
 }
 
-/* title in header */
+/* my initials as a simple title in header */
 /* header properties */
 h1 {
   display:inline-block;
@@ -32,8 +46,8 @@ h1 {
   padding-top: 10px;
 }
 
-/* nav webpage links on right hand side */
-/* links will underline when hover over */
+/* navigation webpage links on right hand side */
+/* links will have a simple underline when hovered over */
 nav {
   float: right;
   font-size: 15px;
@@ -62,18 +76,11 @@ a:hover {
   text-decoration: underline;
 }
 
-
-/* sizing of h2 title with 15px margin at the bottom */
-h2 {
-  font-size: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
+/* -------------------------------- */
 
 /* HERO SECTION */
-/* background image with text over the top on the left hand side in the middle of screen */
+/* background image with text over the top on the left hand side */ 
+/* text in the center left of screen */
 .heroSection {
   background-image: url("../Images/bauhaus1.png");
   background-size:cover;
@@ -99,7 +106,7 @@ h2 {
   text-align: left;
 }
 
-/* MEDIA QUERIES FOR HERO */
+/* MEDIA QUERIES FOR HERO: screen size (mobile devices) */
 @media screen and (max-width: 480px) {
   .heroWrapper {
     grid-template-rows: 400px;
@@ -110,17 +117,24 @@ h2 {
   }
 }
 
+/* -------------------------------- */
+
 /* ABOUT SECTION */
+
+/* minor padding for top and bottom of about section */
+/* larger padding for sides */
 .aboutSection {
   padding: 20px 60px;
 }  
 
+/* flex used for container to put image and text in */
 .aboutContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+/* grid layout with 1fr 1fr (a fractional unit) so there is 2 columns with the same available space */
 .aboutContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -131,27 +145,33 @@ h2 {
   padding-right: 20px;
 }
 
+/* h3 font size with a margin between h3 and p */
 .aboutText h3 {
   font-size: 25px;
   margin-bottom: 32px;
+  text-align: center;
 }
 
+/* space between sentences */
 .aboutText p {
   line-height: 200%;
+  text-align: center;
 }
 
+/* image in center of column */
 .aboutImage {
   display: flex;
   justify-content: center;
 }
 
+/* image height and width */
 .aboutImg {
   width: 500px;
   height: 600px;
   margin-bottom: 15px;
 }
 
-/* MEDIA QUERIES FOR ABOUT SECTION */
+/* MEDIA QUERIES FOR ABOUT SECTION (1st for Desktops, 2nd for mobile devices) */
 @media screen and (max-width: 1024px) {
   .mainSection {
     padding: 30px;
@@ -181,18 +201,23 @@ h2 {
   }
 }
 
+/* -------------------------------- */
 
 /* WORK SECTION */
+/* minor padding for top and bottom of work section */
+/* larger padding for sides */
 .workSection {
   padding: 20px 60px;
 }  
 
+/* flex used for container to put image and text in */
 .workContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
+/* grid layout with 1fr 1fr (a fractional unit) so there is 2 columns with the same available space */
 .workContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -203,15 +228,19 @@ h2 {
   padding-right: 20px;
 }
 
+/* h3 font size with a margin between h3 and p */
 .workText h3 {
   font-size: 25px;
   margin-bottom: 32px;
+  text-align: center;
 }
 
+/* space between sentences */
 .workText p {
   line-height: 200%;
 }
 
+/* image in center of column */
 .workImage {
   display: flex;
   justify-content: center;
@@ -222,6 +251,8 @@ h2 {
 }
 
 /* MEDIA QUERIES FOR WORK SECTION */
+/* on bigger screens, h3 title and text, will appear side by side with the image */
+/* in smaller screens, h3 title and text will appear directly above image */
 @media screen and (max-width: 1024px) {
   .workSection {
     padding: 20px;
@@ -251,6 +282,7 @@ h2 {
   }
 }
 
+/* -------------------------------- */
 
 /* CONTACT SECTION */
 .contact {
@@ -259,6 +291,7 @@ h2 {
   margin-top:10px;
 }
 
+/* color and size of the contact bar */
 .contactBar {
   background: #d4a59a;
   height: 80px;
@@ -266,10 +299,6 @@ h2 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-}
-
-.contactBar img {
-  margin-right: 40px;
 }
 
 .contactBar p {
@@ -281,6 +310,7 @@ h2 {
   margin-right: 40px;
 }
 
+/* h2 title on right hand side of contact bar */
 .contact h2 {
   margin-left: 70px;
 }
@@ -288,9 +318,14 @@ h2 {
 
 /* MEDIA QUERIES FOR CONTACT SECTION */
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:768px) {
   .contact {
     flex-direction: column;
+    width: 100%;
+  }
+
+  .contactBar {
+    width: 100%;
   }
 
   .contactBar p {
@@ -305,6 +340,7 @@ h2 {
     margin-left: 0;
     margin-top: 32px;
     font-size: 25px;
+    order: -1;
   }
 }
 
