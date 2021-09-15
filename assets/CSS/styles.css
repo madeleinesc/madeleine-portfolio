@@ -211,6 +211,17 @@ a:hover {
 
 /* -------------------------------- */
 
+/* Colored bar to seperate sections */
+.coloredBar {
+  display: left;
+  margin-top:10px;
+  background: #d4a59a;
+  height: 50px;
+  width: 90%;
+}
+
+/* -------------------------------- */
+
 /* WORK SECTION */
 /* minor padding for top and bottom of work section */
 /* larger padding for sides */
@@ -293,69 +304,21 @@ h4 {
   }
 }
 
+/* -------------------------------- */
 
+/* Colored bar to seperate sections */
+.coloredBar {
+  display: right;
+  margin-top:10px;
+  background: #d4a59a;
+  height: 50px;
+  width: 90%;
+}
 
 /* -------------------------------- */
 
 /* CONTACT SECTION */
-.contact {
-  display: flex;
-  align-items: center;
-  margin-top:10px;
-}
 
-/* color and size of the contact bar */
-.contactBar {
-  background: #d4a59a;
-  height: 80px;
-  width: 70%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.contactBar p {
-  margin-right: 40px;
-  font-weight: 700;
-}
-
-.contactBar span {
-  margin-right: 40px;
-}
-
-/* h2 title on right hand side of contact bar */
-.contact h2 {
-  margin-left: 70px;
-}
-
-
-/* MEDIA QUERIES FOR CONTACT SECTION */
-
-@media screen and (max-width:768px) {
-  .contact {
-    flex-direction: column;
-    width: 100%;
-  }
-
-  .contactBar {
-    width: 100%;
-  }
-
-  .contactBar p {
-    margin-right: 16px;
-  }
-
-  .contactBar span {
-    font-size: 16px
-  }
-
-  .contact h2 {
-    margin-left: 0;
-    margin-top: 32px;
-    font-size: 25px;
-    order: -1;
-  }
-}
 
 
 
