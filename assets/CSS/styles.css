@@ -15,6 +15,7 @@ body {
 }
 
 /* All h2 titles will have the same sizing and 15px margin at the bottom */
+/* text will be centered */
 h2 {
   font-size: 40px;
   margin-top: 20px;
@@ -23,6 +24,7 @@ h2 {
 }
 
 /* All h3 titles will have the same sizing and margin */
+/* text will centered */
 h3 {
   font-size: 20px;
   margin-bottom: 32px;
@@ -30,13 +32,16 @@ h3 {
 }
 
 /* space between sentences */
+/* all of p will have the same size and be centered */
 p {
   line-height: 200%;
   text-align: center;
   font-size: 15px;
 }
 
+
 /* -------------------------------- */
+
 
 /* HEADER SECTION */
 
@@ -90,9 +95,12 @@ a:hover {
   text-decoration: underline;
 }
 
+
 /* -------------------------------- */
 
+
 /* HERO SECTION */
+
 /* background image with text over the top on the left hand side */ 
 /* text in the center left of screen */
 .heroSection {
@@ -131,7 +139,9 @@ a:hover {
   }
 }
 
+
 /* -------------------------------- */
+
 
 /* ABOUT SECTION */
 
@@ -209,7 +219,9 @@ a:hover {
   }
 }
 
+
 /* -------------------------------- */
+
 
 /* Colored bar to seperate sections */
 .coloredBar {
@@ -220,9 +232,12 @@ a:hover {
   width: 95%;
 }
 
+
 /* -------------------------------- */
 
+
 /* WORK SECTION */
+
 /* minor padding for top and bottom of work section */
 /* larger padding for sides */
 .workSection {
@@ -301,7 +316,9 @@ a:hover {
   }
 }
 
+
 /* -------------------------------- */
+
 
 /* Colored bar to seperate sections */
 .coloredBar {
@@ -315,13 +332,14 @@ a:hover {
 /* -------------------------------- */
 
 /* CONTACT SECTION */
+
 /* minor padding for top and bottom of work section */
 /* larger padding for sides */
 .contactSection {
   padding: 20px 60px;
 }
 
-/* Style inputs */
+/* style inputs for contact form */
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
@@ -343,14 +361,14 @@ input[type=submit]:hover {
   background-color: #5c2018;
 }
 
-/* Style the container/contact section */
+/* style for container */
 .container {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 10px;
 }
 
-/* Create two columns that float next to eachother */
+/* two columns floating next to eachother */
 .column {
   float: left;
   width: 50%;
@@ -358,7 +376,7 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-/* Clear floats after the columns */
+/* clear floats after the columns */
 .row:after {
   content: "";
   display: table;
@@ -374,10 +392,13 @@ input[type=submit]:hover {
   }
 }
 
+
 /* -------------------------------- */
+
 
 /* FOOTER SECTION */
 
+/* icons for github and linked in middle of footer that link to my pages */
 .footerlist {
   padding: 30px 0;
   text-align: center;
@@ -391,7 +412,6 @@ input[type=submit]:hover {
 }
 
 /* MEDIA QUERIES FOR FOOTER SECTION */
-
 @media screen and (max-width: 480px) {
   .footerlistitem {
     height: 50%;
