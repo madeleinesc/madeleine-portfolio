@@ -22,6 +22,20 @@ h2 {
   text-align: center;
 }
 
+/* All h3 titles will have the same sizing and margin */
+h3 {
+  font-size: 20px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+/* space between sentences */
+p {
+  line-height: 200%;
+  text-align: center;
+  font-size: 15px;
+}
+
 /* -------------------------------- */
 
 /* HEADER SECTION */
@@ -138,7 +152,7 @@ a:hover {
 .aboutContent {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 700px;
+  grid-template-rows: 650px;
 }
 
 .aboutText {
@@ -152,13 +166,6 @@ a:hover {
   text-align: center;
 }
 
-/* space between sentences */
-.aboutText p {
-  line-height: 200%;
-  text-align: center;
-  font-size: 15px;
-}
-
 /* image in center of column */
 .aboutImage {
   display: flex;
@@ -170,7 +177,6 @@ a:hover {
   width: 500px;
   height: 600px;
   margin-bottom: 15px;
-  border-radius: 15px;
 }
 
 /* MEDIA QUERIES FOR ABOUT SECTION (1st for Desktops, 2nd for mobile devices) */
@@ -210,52 +216,13 @@ a:hover {
 /* larger padding for sides */
 .workSection {
   padding: 20px 60px;
-}  
+}
 
 /* flex used for container to put image and text in */
 .workContainer {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-}
-
-/* grid layout with 1fr 1fr (a fractional unit) so there is 2 columns with the same available space */
-.workContent {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 400px;
-}
-
-.workText {
-  padding-right: 20px;
-}
-
-/* h3 font size with a margin between h3 and p */
-.workText h3 {
-  font-size: 20px;
-  margin-bottom: 32px;
-  text-align: center;
-}
-
-/* space between sentences */
-.workText p {
-  line-height: 200%;
-  margin-bottom: 32px;
-}
-
-.workText h4 {
-  text-align: center;
-}
-
-/* image in center of column */
-.mainworkImage {
-  display: flex;
-  justify-content: center;
-}
-
-.mainworkImg {
-  margin-bottom: 15px;
-  border-radius: 15px;
 }
 
 .workRow {
@@ -279,6 +246,9 @@ a:hover {
   width: 100%;
 }
 
+h4 {
+  text-align: center;
+}
 
 /* MEDIA QUERIES FOR WORK SECTION */
 /* on bigger screens, h3 title and text, will appear side by side with the image */
