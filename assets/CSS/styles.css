@@ -217,7 +217,7 @@ a:hover {
   margin-top:10px;
   background: #d4a59a;
   height: 50px;
-  width: 90%;
+  width: 95%;
 }
 
 /* -------------------------------- */
@@ -257,9 +257,6 @@ a:hover {
   width: 100%;
 }
 
-h4 {
-  text-align: center;
-}
 
 /* MEDIA QUERIES FOR WORK SECTION */
 /* on bigger screens, h3 title and text, will appear side by side with the image */
@@ -312,7 +309,7 @@ h4 {
   margin-top:10px;
   background: #d4a59a;
   height: 50px;
-  width: 90%;
+  width: 95%;
 }
 
 /* -------------------------------- */
@@ -322,14 +319,33 @@ h4 {
 
 
 
+/* -------------------------------- */
+
+/* FOOTER SECTION */
+
+.footerlist {
+  padding: 30px 0;
+  text-align: center;
+}
+
+.footerlistitem {
+  list-style-type: none;
+  display:inline-block;
+  height: 50px;
+  width: 50px;
+}
+
+/* MEDIA QUERIES FOR FOOTER SECTION */
+
+@media screen and (max-width: 480px) {
+  .footerlistitem {
+    height: 50%;
+    width: 50%;
+  }
+}
 
 
-
-
-
-
-
-
+@media screen and (max-width: 480px) {
 
 
 
