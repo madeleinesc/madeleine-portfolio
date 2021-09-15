@@ -315,9 +315,64 @@ a:hover {
 /* -------------------------------- */
 
 /* CONTACT SECTION */
+/* minor padding for top and bottom of work section */
+/* larger padding for sides */
+.contactSection {
+  padding: 20px 60px;
+}
 
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+input[type=submit] {
+  background-color: #d4a59a;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
 
+input[type=submit]:hover {
+  background-color: #5c2018;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* MEDIA QUERIES FOR CONTACT SECTION */
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 480px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
 
 /* -------------------------------- */
 
@@ -345,7 +400,6 @@ a:hover {
 }
 
 
-@media screen and (max-width: 480px) {
 
 
 
